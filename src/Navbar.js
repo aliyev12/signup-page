@@ -8,7 +8,7 @@ import Switch from "@material-ui/core/Switch";
 import { withStyles } from "@material-ui/core/styles";
 import SearchIcon from "@material-ui/icons/Search";
 import styles from "./styles/NavbarStyles";
-import { Input } from "@material-ui/core";
+// import { Input } from "@material-ui/core";
 
 class Navbar extends Component {
   render() {
@@ -18,7 +18,9 @@ class Navbar extends Component {
         <AppBar position="static" color="primary">
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit">
-              <span>🇫🇷</span>
+              <span role="img" aria-label="French Flag Emoji">
+                🇫🇷
+              </span>
             </IconButton>
             <Typography className={classes.title} variant="h6" color="inherit">
               App Title
