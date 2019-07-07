@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Form from "./Form";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import Test from "./Test";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <PageContent>
           <Navbar />
           <Form />
+          <Test />
         </PageContent>
       </LanguageProvider>
     </ThemeProvider>

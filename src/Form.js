@@ -15,7 +15,7 @@ import Select from "@material-ui/core/Select";
 import withStyles from "@material-ui/core/styles/withStyles";
 import { LanguageContext } from "./contexts/LanguageContext";
 import styles from "./styles/FormStyles";
-import { words } from "./lib/translations";
+import words from "./lib/translations";
 
 class Form extends Component {
   static contextType = LanguageContext;
