@@ -6,18 +6,14 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Test from "./Test";
 
-function App() {
-  return (
-    <ThemeProvider>
-      <LanguageProvider>
-        <PageContent>
-          <Navbar />
-          <Form />
-          <Test />
-        </PageContent>
-      </LanguageProvider>
-    </ThemeProvider>
-  );
-}
-
-export default App;
+export default () => (
+  <ThemeProvider>
+    <LanguageProvider>
+      <PageContent>
+        <Navbar />
+        <Form />
+        <Test />
+      </PageContent>
+    </LanguageProvider>
+  </ThemeProvider>
+);
